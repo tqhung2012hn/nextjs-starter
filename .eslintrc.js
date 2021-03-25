@@ -58,4 +58,17 @@ module.exports = {
             },
         ],
     },
+    settings: {
+        'import/resolver': {
+            alias: [
+                ['@/components', './src/components'],
+                ['@/constants', './src/constants'],
+                ['@/containers', './src/containers'],
+                ['@/contexts', './src/contexts'],
+                ['@/hocs', './src/hocs'],
+                ['@/libs', './src/libs'],
+                ['@/styles', './src/styles'],
+            ],
+        },
+    },
 };
