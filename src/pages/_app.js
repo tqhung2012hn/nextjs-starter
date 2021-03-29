@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
+import { AuthProvider } from '@/contexts/Auth';
 import { GlobalStyles, theme } from '@/styles/GlobalStyles';
 
 function MyApp({ Component, pageProps }) {
@@ -8,7 +9,9 @@ function MyApp({ Component, pageProps }) {
         <>
             <GlobalStyles />
             <ThemeProvider theme={theme}>
-                <Component {...pageProps} />
+                <AuthProvider>
+                    <Component {...pageProps} />
+                </AuthProvider>
             </ThemeProvider>
         </>
     );

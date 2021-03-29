@@ -23,6 +23,10 @@ export const Welcome = styled.h1`
     }
 `;
 
+export const Text = styled.p`
+    font-style: italic;
+`;
+
 export const Wrapper = styled.div`
     width: 100%;
     height: 100%;
