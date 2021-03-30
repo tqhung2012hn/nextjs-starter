@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 import { Content, Wrapper } from './styles';
 
-const Layout = ({ children }) => {
+const AppLayout = ({ children }) => {
     return (
         <Wrapper>
             <Header />
@@ -15,8 +15,8 @@ const Layout = ({ children }) => {
     );
 };
 
-Layout.propTypes = {
+AppLayout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default AppLayout;

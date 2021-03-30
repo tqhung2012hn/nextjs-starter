@@ -66,6 +66,7 @@ module.exports = {
                 ['@/containers', './src/containers'],
                 ['@/contexts', './src/contexts'],
                 ['@/hocs', './src/hocs'],
+                ['@/layouts', './src/layouts'],
                 ['@/libs', './src/libs'],
                 ['@/styles', './src/styles'],
             ],

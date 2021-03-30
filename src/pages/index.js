@@ -1,16 +1,16 @@
 import Head from 'next/head';
 
-import Layout from '@/components/Layout';
+import AppLayout from '@/layouts/AppLayout';
 import Home from '@/containers/Home';
 
 export default function HomePage() {
     return (
-        <Layout>
+        <AppLayout>
             <Head>
                 <title>Home</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Home />
-        </Layout>
+        </AppLayout>
     );
 }

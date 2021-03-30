@@ -7,6 +7,7 @@
             "@/containers/*": ["containers/*"],
             "@/contexts/*": ["contexts/*"],
             "@/hocs/*": ["hocs/*"],
+            "@/layouts/*": ["layouts/*"],
             "@/libs/*": ["libs/*"],
             "@/styles/*": ["styles/*"]
         }
