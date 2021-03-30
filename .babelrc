@@ -8,6 +8,12 @@
                 "displayName": true,
                 "preprocess": false
             }
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd"
+            }
         ]
     ]
 }

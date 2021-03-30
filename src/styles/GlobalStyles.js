@@ -1,5 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
+// eslint-disable-next-line
+import paletteLess from '!!raw-loader!@/styles/antd-custom.less';
+import lessToJs from 'less-vars-to-js';
+
+import { objectToCamelCase } from '@/libs/helpers';
+
+const lessVariables = lessToJs(paletteLess, {
+    resolveVariables: true,
+    stripPrefix: true,
+});
+
 const theme = {
     font: {
         sizes: {
@@ -51,6 +62,9 @@ const theme = {
         easing: {
             sharp: 'cubic-bezier(.65,-0.32,.38,1.23)',
         },
+    },
+    antdVariables: {
+        ...objectToCamelCase(lessVariables),
     },
 };
 

@@ -1,3 +1,5 @@
+import '@/styles/styles.less';
+
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import Head from 'next/head';
