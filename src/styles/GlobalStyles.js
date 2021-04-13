@@ -1,27 +1,28 @@
 import { createGlobalStyle } from 'styled-components';
+import { createMuiTheme } from '@material-ui/core/styles';
 
-const theme = {};
+// Create a theme instance.
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            light: '#1976D2',
+            main: '#1F62B0',
+            dark: '#174A85',
+        },
+        secondary: {
+            light: '#FF5844',
+            main: '#F20519',
+            dark: '#B60000',
+        },
+    },
+});
 
 const GlobalStyles = createGlobalStyle`
-    * {
-        box-sizing: border-box;
-    }
-
     html,
     body,
     #__next {
         width: 100%;
         height: 100%;
-    }
-
-    body {
-        padding: 0;
-        margin: 0;
-        line-height: 1.5;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
 `;
 
