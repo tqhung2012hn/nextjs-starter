@@ -20,14 +20,13 @@ export const BaseInput = styled.input`
     box-sizing: border-box;
     outline: none;
 
-    transition: all 0.2s ${(props) => props.theme.transitions.easing.sharp};
-    -moz-transition: all 0.2s ${(props) => props.theme.transitions.easing.sharp};
-    -webkit-transition: all 0.2s
-        ${(props) => props.theme.transitions.easing.sharp};
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
 
     &:focus,
     &:not([value='']) {
-        border-color: ${(props) => props.theme.colors.black};
+        border-color: #000;
     }
 
     & ~ label {
@@ -35,24 +34,21 @@ export const BaseInput = styled.input`
         position: absolute;
         left: 18px;
         top: 12px;
-        font-size: ${(props) => props.theme.colors.big};
+        font-size: 14px;
         pointer-events: none;
         z-index: 1;
         color: #767676;
         opacity: 0.5;
 
-        transition: all 0.2s ${(props) => props.theme.transitions.easing.sharp};
-        -moz-transition: all 0.2s
-            ${(props) => props.theme.transitions.easing.sharp};
-        -webkit-transition: all 0.2s
-            ${(props) => props.theme.transitions.easing.sharp};
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
     }
 
     &:focus ~ label,
     &:not([value='']) ~ label {
         top: -12px;
         left: 8px;
-        font-size: ${(props) => props.theme.font.sizes.normal};
         opacity: 1;
         padding: 1px 8px;
         border-radius: 2px;
@@ -60,11 +56,11 @@ export const BaseInput = styled.input`
 
     &:not([value='']) ~ label {
         background-color: #fff;
-        color: ${(props) => props.theme.colors.black};
+        color: #000;
     }
 
     &:focus ~ label {
-        background-color: ${(props) => props.theme.colors.black};
+        background-color: #000;
         color: #fff;
     }
 `;

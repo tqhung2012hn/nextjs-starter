@@ -13,12 +13,11 @@ export const BaseButton = styled.button`
     border: 0;
     background-color: ${(props) => props.color};
     color: #fff;
-    letter-spacing: ${(props) => props.theme.spacing.smaller};
+    letter-spacing: 5px;
 
-    transition: all 0.2s ${(props) => props.theme.transitions.easing.sharp};
-    -moz-transition: all 0.2s ${(props) => props.theme.transitions.easing.sharp};
-    -webkit-transition: all 0.2s
-        ${(props) => props.theme.transitions.easing.sharp};
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
 
     &:focus {
         outline: none;
@@ -36,8 +35,10 @@ export const BaseButton = styled.button`
                   &:hover,
                   &:active {
                       font-weight: bold;
-                      letter-spacing: ${(props) => props.theme.spacing.small};
-                      box-shadow: ${(props) => props.theme.shadows[6]};
+                      letter-spacing: 10px;
+                      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+                          0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+                          0px 1px 14px 0px rgba(0, 0, 0, 0.12);
                   }
               `}
 

@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import Button from '@/components/Button';
 import { LOGIN_ROUTE } from '@/constants/routes';
 import { useAuth } from '@/contexts/Auth';
-import { theme } from '@/styles/GlobalStyles';
 
 import { Wrapper, Welcome, Text } from './styles';
 
@@ -21,7 +20,6 @@ const Home = () => {
                     </Text>
                     <Button
                         outline
-                        color={theme.colors.red}
                         onClick={() => {
                             setUser();
                             router.push(LOGIN_ROUTE);

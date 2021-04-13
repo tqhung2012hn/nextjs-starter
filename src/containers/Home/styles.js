@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 
 export const Welcome = styled.h1`
-    color: ${(props) => props.theme.colors.blue};
-    letter-spacing: ${(props) => props.theme.spacing.smaller};
+    color: darkblue;
+    letter-spacing: 5px;
     user-select: none;
     transition: all 0.3s ease;
 
     &:after {
         display: block;
         content: '';
-        border-bottom: 3px solid ${(props) => props.theme.colors.blue};
+        border-bottom: 3px solid darkblue;
         transform: scaleX(0);
         transition: all 0.3s ease;
     }
 
     &:hover {
-        letter-spacing: ${(props) => props.theme.spacing.small};
+        letter-spacing: 7.5px;
 
         &:after {
             transform: scaleX(1);

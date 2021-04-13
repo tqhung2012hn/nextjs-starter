@@ -4,7 +4,7 @@ import { Wrapper } from './styles';
 
 const LoadingScreen = () => (
     <Wrapper>
-        <Spinner size="bigger" />
+        <Spinner />
     </Wrapper>
 );
 

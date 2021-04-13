@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 
-import { theme } from '@/styles/GlobalStyles';
-
 import Spinner from '../Spinner';
 
 import { BaseButton } from './styles';
@@ -15,7 +13,7 @@ const Button = ({ loading, disabled, children, ...restProps }) => {
 };
 
 Button.defaultProps = {
-    color: theme.colors.black,
+    color: '#000',
     loading: false,
     disabled: false,
     children: null,
